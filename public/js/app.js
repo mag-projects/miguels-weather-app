@@ -34,7 +34,7 @@ locationSearch.addEventListener("click", (e) => {
             $weatherTitle.textContent = data.location;
             $lowTemp.textContent = `${Math.round(data.low)}°`;
             $highTemp.textContent = `${Math.round(data.high)}°`;
-            $rainChance.textContent = `${Math.round(data.rainChance)}% chance of rain.`;
+            $rainChance.textContent = `${Math.round(data.rainChance/Math.pow(10, -2))}% chance of rain.`;
             $weatherSummary.textContent = `${data.summary}`;
             // Display weather card
             $weatherCard.style.visibility = "visible";
