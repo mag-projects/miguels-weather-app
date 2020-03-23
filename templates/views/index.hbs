@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Weather App</title>
+</head>
+<body>
+
+<!--WEATHER FORM-->
+<div class="container">
+    <form class=" text-center ">
+        <div class="form-group" id="form">
+
+            <p id="app-name">
+                {{title}}<br>
+            </p>
+
+            <label>Enter location:</label>
+            <div class="row justify-content-center">
+                <input id="location-input" type="text" placeholder="Location" class="form-control col-4">
+                <button id="location-search" class="btn btn-primary" style="max-width: 10%;">Search</button>
+            </div>
+        </div>
+    </form>
+
+    <!--WEATHER CARD-->
+    <div style="display: flex; justify-content: center;" id="weather-card">
+        <div class="card" id="card-background" style="width: 18rem;">
+
+            <!--            Displays Card Image-->
+            <img img src="" name="canvas" class="card-img-top" alt="..." id="card-image">
+            <div class="card-body">
+
+                <!--                Displays Location Name-->
+                <h5 class="card-title text-center" id="weather-title">Card title</h5>
+
+                <!--                Displays High & Low Temp-->
+                <div class="row" id="temp-text">
+                    <p class="col-6 text-center">Low</p>
+                    <p class="col-6 text-center">High</p>
+                </div>
+
+                <div class="row" id="temps">
+                    <p class="col-6 text-center" id="low-temp">Low</p>
+                    <p class="col-6 text-center" id="high-temp">High</p>
+                </div>
+
+                <!--                Displays Rain Chance-->
+                <p class="card-text text-center" id="rain-chance">Rain Chance</p>
+
+                <!--                Displays Weather Summary-->
+                <p class="card-text" id="weather-summary">Summary</p>
+
+                <!--                Link-->
+                <p style="margin-top: 10%; margin-bottom: -5%;">Created By: Miguel Guzman</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>

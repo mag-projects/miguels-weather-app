@@ -1,0 +1,39 @@
+#weather-title {
+    color: #F5FF73
+}
+
+#temps {
+    font-size: 2rem;
+    color: #74E8BF;
+}
+
+#temp-text {
+    margin-bottom: -10%;
+    margin-top: 10%;
+    color: #74E8CD;
+}
+
+#rain-chance {
+    border-top: 1px solid #C8C8C8;
+    padding-top: 16px;
+    font-size: 1.4rem;
+    color: #FA8D36;
+}
+
+#weather-summary {
+    border-top: 1px solid #C8C8C8;
+    padding-top: 16px;
+    font-size: 1.2rem;
+    color: #83F77D;
+}
+
+#app-name {
+    margin-top: 5%;
+}
+
+#card-background {
+    background: #A5B5D0;
+    background: -webkit-linear-gradient(top left, #A5B5D0, #A86DAE);
+    background: -moz-linear-gradient(top left, #A5B5D0, #A86DAE);
+    background: linear-gradient(to bottom right, #A5B5D0, #A86DAE);
+}
