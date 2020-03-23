@@ -1,5 +1,6 @@
 #weather-title {
     color: white;
+    text-shadow: 2px 2px #000;
 }
 
 .card-body {
@@ -9,12 +10,14 @@
 #temps {
     font-size: 2rem;
     color: white;
+    text-shadow: 2px 2px #000
 }
 
 #temp-text {
     margin-bottom: -10%;
     margin-top: 10%;
     color: white;
+    text-shadow: 2px 2px #000
 }
 
 #rain-chance {
@@ -22,6 +25,7 @@
     padding-top: 16px;
     font-size: 1.4rem;
     color: white;
+    text-shadow: 2px 2px #000
 }
 
 #weather-summary {
@@ -29,6 +33,7 @@
     padding-top: 16px;
     font-size: 1.2rem;
     color: white;
+    text-shadow: 1px 1px #000
 }
 
 #app-name {
