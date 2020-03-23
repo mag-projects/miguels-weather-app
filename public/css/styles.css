@@ -1,30 +1,30 @@
 #weather-title {
-    color: #F5FF73
+    color: white;
 }
 
 #temps {
     font-size: 2rem;
-    color: #74E8BF;
+    color: white;
 }
 
 #temp-text {
     margin-bottom: -10%;
     margin-top: 10%;
-    color: #74E8CD;
+    color: white;
 }
 
 #rain-chance {
     border-top: 1px solid #C8C8C8;
     padding-top: 16px;
     font-size: 1.4rem;
-    color: #FA8D36;
+    color: white;
 }
 
 #weather-summary {
     border-top: 1px solid #C8C8C8;
     padding-top: 16px;
     font-size: 1.2rem;
-    color: #83F77D;
+    color: white;
 }
 
 #app-name {
