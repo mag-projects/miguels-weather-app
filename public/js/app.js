@@ -1,10 +1,10 @@
 const locationInput = document.querySelector("#location-input");
 const locationSearch = document.querySelector("#location-search");
-
 // Weather Card
 const $weatherTitle = document.querySelector("#weather-title");
 const $weatherCard = document.querySelector("#weather-card");
 const $lowTemp = document.querySelector("#low-temp");
+const $currentTemp = document.querySelector("#current-temp");
 const $highTemp = document.querySelector("#high-temp");
 const $rainChance = document.querySelector("#rain-chance");
 const $weatherSummary = document.querySelector("#weather-summary");
@@ -33,8 +33,9 @@ locationSearch.addEventListener("click", (e) => {
             // Adds location name to card title
             $weatherTitle.textContent = data.location;
             $lowTemp.textContent = `${Math.round(data.low)}°`;
+            $currentTemp.textContent = `${Math.round(data.current)}°`;
             $highTemp.textContent = `${Math.round(data.high)}°`;
-            $rainChance.textContent = `${Math.round(data.rainChance/Math.pow(10, -2))}% chance of rain.`;
+            $rainChance.textContent = `${Math.round(data.rainChance / Math.pow(10, -2))}% chance of rain.`;
             $weatherSummary.textContent = `${data.summary}`;
             // Display weather card
             $weatherCard.style.visibility = "visible";

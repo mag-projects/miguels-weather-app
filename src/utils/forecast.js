@@ -10,6 +10,7 @@ const forecast = ((coord1, coord2, callback) => {
                 summary: body.daily.data[0].summary,
                 high: body.daily.data[0].temperatureHigh,
                 low: body.daily.data[0].temperatureLow,
+                current: body.currently.temperature,
                 rainChance: body.daily.data[0].precipProbability
             });
     });

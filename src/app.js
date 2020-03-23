@@ -32,13 +32,14 @@ app.get("/weather", (req, res) => {
     geolocation(req.query.address, (err, {lat, long, name}) => {
         if (err) return res.send({error: err});
 
-        forecast(lat, long, (err, {summary, high, low, rainChance}) => {
+        forecast(lat, long, (err, {summary, high, low, current, rainChance}) => {
             if (err) return res.send({error: err});
             res.send({
                 location: name,
                 summary,
                 high,
                 low,
+                current,
                 rainChance
             });
         });
